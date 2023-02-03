@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+}
+
+.container-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  height: 80px;    /*Altura Header, abajo se usara*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-header nav label i {  /*Este "i" es un icono importado de font awesome. Se necesita el link en el head.  Ver el html*/
+  font-size: 25px;
+  color: white;
+  margin-right: 10px;
+}
+
+.container-header nav label i,
+.container-header nav input {
+  display: none;
+}
+
+#menu {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+#menu li {
+  margin: 0 20px;
+}
+
+.item-menu {
+  color: white;
+}
+
+.item-menu:hover,
+.item-menu.active {
+  color: yellow;
+}
+
+/*main*/
+/* H2 {
+  text-align: center;
+} */
+/* .titulo2 {
+  padding-top: 50px;
+} */
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.hero {
+  background-image: url("../image/fondosnow.jpeg");
+  width: 100%;
+  height: 400px;
+  background-position: center top;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
+.hero p {
+  color: white;
+  text-shadow: 0 0 6px black;
+  text-align: center;
+}
+
+.nieve {
+  text-align: center;
+}
+.nieve {
+  padding: 20px;
+}
+.xtreme {
+  text-align: center;
+}
+.xtreme {
+  padding: 20px;
+}
+
+/* img {
+  height: 31px;
+} */
+
+#carouselExampleControls img {
+  aspect-ratio: 3 / 1.2;
+  object-fit: cover;
+}
+
+li a {
+  text-align: center;
+}
+
+.contenedor-base {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px 20px;
+  row-gap: 30px;
+}
+
+.contenedor-base iframe {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.productos div {
+  padding: 15px;
+  border: 1px solid grey;
+  width: 280px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.productos div img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.boton {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+  padding: 5px 10px;
+}
+
+
+.secundario a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+  padding: 5px 10px;
+}
+.secundario div img {
+  width: 250px;
+  height: 250px;
+}
+.secundario div {
+  border: 1px solid grey;
+  width: 250px;
+  height: 350px;
+  margin: 90px;
+  width: 80%;
+  text-align: center;
+  display: inline-block;
+}
+.secundario div a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+  padding: 5px 10px;
+}
+
+/*footer*/
+footer div img {
+  width: 20px;
+  height: 20px;
+}
+footer div {
+  text-align: center;
+  margin: 5px;
+}
+
+/*redsocial**/
+.social {
+  padding: 30px;
+  height: 10;
+  display: flex;
+  justify-content: space-around;
+}
+.social2 {
+  padding: 30px;
+  height: 10;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social1 {
+  padding: 30px;
+  height: 10;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social3 {
+  padding: 30px;
+  height: 10;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social1 {
+  padding: 10px;
+}
+
+/*! RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.grid-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+}
+.grid-container div {
+  box-shadow: 10px 5px 29px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 5px 29px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 5px 29px -4px rgba(0, 0, 0, 0.75);
+}
+
+.grid-item {
+  border: 2px solid black;
+  background-color: rgb(14, 200, 247);
+  font-size: 15px;
+  padding: 0px;
+  text-align: center;
+}
+
+.primer-item {
+  
+  grid-column: 2 / 4;
+}
+
+
+.tercer-item {
+  grid-row: 2 / 5;
+}
+
+.sectimo-item {
+  grid-row: 3 / 5;
+}
+
+.sesto-item {
+  grid-row: 3 / 4;
+}
+
+.cuarto-item {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 40px;
+  padding: 20px;
+}
+.primer-item {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.octavo-item {
+  font-size: 15px;
+  padding: 10px;
+}
+.tercer-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.segundo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.quinto-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+.sesto-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.sectimo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+/*----------*MEDIA QUERY-----------*/
+
+/**Snow*/
+.extreme1 {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.extreme1 div {
+  padding: 20px;
+  border: 1px solid grey;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.extreme1 div img {
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.extreme1 a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  background-color: black;
+  padding: 5px 10px;
+}
+/**animaciom*/
+
+/**HOVER*/
+/**transicion*/
+
+.animacion4 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  background: black;
+  text-shadow: 3px 3px rgb(211, 15, 15);
+  animation-name: eclips;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 1s;
+  animation-iteration-count: inherit;
+}
+
+/**KEYFRAME*/
+@keyframes eclips {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 34px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 21px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .cuarto-item {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .primer-item {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .tercer-item {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+  }
+  .octavo-item {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #menu {
+    background-color: black;
+    position: fixed;
+    top: 80px;  /*Misma altura header*/
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);  /*el alto de la pantalla menos misma altura header*/
+    flex-direction: column;
+    transition: left 0.3s ease-in-out;
+  }
+
+  #menu li {
+    text-align: left;
+    padding-left: 35vw;
+    line-height: 100px;
+  }
+
+  #menu li a {
+    font-size: 25px;
+  }
+
+  .container-header nav label i {
+    display: block;
+  }
+
+  #botonMenu:checked + #menu {
+    left: 0;
+  }
+
+  .extreme1 div {
+    width: 300px;
+    height: 450px;
+
+  }
+
+}
+
