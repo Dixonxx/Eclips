@@ -1,0 +1,33 @@
+/*-------header------*/
+
+header {
+  background-color: black;
+
+
+  .container-header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  nav {
+    label {
+    }
+    input {
+    }
+    ul {
+      li {
+        a {
+        }
+      }
+    }
+  }
+}
