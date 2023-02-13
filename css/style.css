@@ -202,11 +202,21 @@ header .container-header nav #menu li .item-menu.active {
     width: 100%;
   }
 }
+
+.secundario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  padding-bottom: 50px;
+
+}
+
 .secundario div {
   border: 1px solid grey;
   width: 250px;
   height: 350px;
-  margin: 90px;
   width: 80%;
   text-align: center;
   display: inline-block;
@@ -362,6 +372,12 @@ footer .social img:hover {
     font-size: 21px;
   }
 
+  .nieve .animacion4 {
+    font-size: 24px;
+    text-shadow: 1px 1px aqua;
+    animation-duration: 8s;
+  }
+
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     
@@ -400,12 +416,12 @@ footer .social img:hover {
   #menu li {
     text-align: left;
     padding-left: 20vw;
-    line-height: 100px;
+    line-height: 60px;
   }
   #menu li a {
     font-size: 25px;
   }
-  .container-header nav label i {
+  header .container-header nav label i {
     display: block;
   }
   #botonMenu:checked + #menu {
