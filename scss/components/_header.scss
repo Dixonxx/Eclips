@@ -5,8 +5,7 @@ header {
     margin: auto;
     padding: 10px;
     height: 80px;    
-    display: flex;
-    flex-direction: row;
+    @extend %display-flex-row;
     justify-content: space-between;
     align-items: center;
     .logo {
@@ -14,8 +13,7 @@ header {
       font-size: 25px;
     }
     nav {
-      display: flex;
-      flex-direction: row;
+      @extend %display-flex-row;
       justify-content: center;
       align-items: center;
       label {

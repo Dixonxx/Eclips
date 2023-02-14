@@ -1,7 +1,6 @@
 footer {
     .social {
-        display: flex;
-        flex-direction: row;
+        @extend %display-flex-row;
         justify-content: center;
         align-items: center;
         column-gap: 20px;

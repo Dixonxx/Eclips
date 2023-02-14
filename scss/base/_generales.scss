@@ -15,8 +15,7 @@ a {
 
 #menu {
     margin: 0;
-    display: flex;
-    flex-direction: row;
+    @extend %display-flex-row;
     list-style: none;
 }
 
@@ -66,7 +65,6 @@ h3 {
     }
 }
 
-/* modificacion carrusel bootstrap */
 #carouselExampleControls img {
     aspect-ratio: 3 / 1.2;
     object-fit: cover;

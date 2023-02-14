@@ -1,0 +1,25 @@
+//variables
+$color-mas:  black;
+$azulito-agua:  aqua;
+$color-menos:  white;
+
+//LISTAS
+$font-size: 20px, 56px, 40px, 28px, 25px;
+
+// EXTENDS
+%display-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+// MIXIN
+@mixin display-dir-pos ($display, $dir, $justi, $align){
+    display: $display;
+    flex-direction: $dir;
+    justify-content: $justi;
+    align-items: $align;
+}
+
+
+
+

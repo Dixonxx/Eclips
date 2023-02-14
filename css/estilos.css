@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,300&display=swap");
+#menu, header .container-header, header .container-header nav, footer .social {
+  display: flex;
+  flex-direction: row; }
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +16,6 @@ a {
 
 #menu {
   margin: 0;
-  display: flex;
-  flex-direction: row;
   list-style: none; }
 
 #menu li {
@@ -52,7 +54,6 @@ h3 {
     background-color: transparent;
     transform: scale(1.1); }
 
-/* modificacion carrusel bootstrap */
 #carouselExampleControls img {
   aspect-ratio: 3 / 1.2;
   object-fit: cover; }
@@ -64,16 +65,12 @@ header {
     margin: auto;
     padding: 10px;
     height: 80px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center; }
     header .container-header .logo {
       color: white;
       font-size: 25px; }
     header .container-header nav {
-      display: flex;
-      flex-direction: row;
       justify-content: center;
       align-items: center; }
       header .container-header nav label i {
@@ -113,9 +110,9 @@ header {
 .productos {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px; }
   .productos div {
     padding: 15px;
@@ -172,10 +169,6 @@ header {
     .secundario div img {
       width: 250px;
       height: 250px; }
-    .secundario div a {
-      color: white;
-      background-color: black;
-      padding: 5px 10px; }
 
 .xtreme {
   text-align: center;
@@ -185,9 +178,9 @@ header {
   max-width: 1100px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: auto;
   padding: 50px 20px;
   gap: 30px; }
@@ -262,8 +255,6 @@ header {
     padding: 10px; }
 
 footer .social {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   column-gap: 20px; }
